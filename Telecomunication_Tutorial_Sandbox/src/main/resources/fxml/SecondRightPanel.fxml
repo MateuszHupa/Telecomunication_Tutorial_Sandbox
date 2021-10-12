@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="secondRightPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplikacja_do_treningu_konsultantow.controllers.SecondRightPanelController">
+   <children>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="imieField" text="Imie field">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="nazwiskoField" text="Nazwisko field">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label fx:id="formaPrawnaField" text="Forma prawna field">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label disable="true" text="Forma prawna" />
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label fx:id="numerDowoduOsobistegoField" text="Numer dowodu osobistego field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Seria i numer dowodu osobistego" />
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label fx:id="dataWaznosciDowoduOsobistegoField" text="Data ważności dowodu osobistego field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Data ważności" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label fx:id="peselField" text="Pesel field">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label disable="true" text="Pesel" />
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label fx:id="adresZameldowaniaField" text="Ades zameldowania field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Adres zameldowania" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label fx:id="numerKontaktowyField" text="Numer kontaktowy field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Numer kontaktowy" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox>
+         <children>
+            <VBox>
+               <children>
+                  <Label fx:id="emailDoFakturField" text="Email do faktur field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Email do faktur" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label fx:id="emailKontaktowyField" text="Email kontaktowy field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Adres email" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox spacing="5.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label fx:id="hasloDoKontaField" text="Hasło do konta field">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label disable="true" text="Hasło" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

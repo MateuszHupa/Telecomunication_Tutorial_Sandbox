@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rozmowaVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="420.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplikacja_do_treningu_konsultantow.controllers.SecondMainKlientRequestPaneController">
+   <children>
+      <HBox prefHeight="0.0" prefWidth="410.0">
+         <children>
+            <Label fx:id="aktualnyKlientLabel" focusTraversable="false" prefHeight="27.0" prefWidth="350.0" text="Bieżący klient:" visible="false" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="licznikLabel" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="118.0" text="Licznik" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin></Separator>
+      <TextArea fx:id="textAreaKlient" editable="false" focusTraversable="false" minHeight="45.0" minWidth="400.0" prefHeight="68.0" prefWidth="410.0" visible="false" wrapText="true">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </TextArea>
+      <Label fx:id="wybierzLabel" text="Wybierz prawidłową odpowiedź:" visible="false">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin>
+      </Separator>
+      <RadioButton fx:id="radioA" focusTraversable="false" mnemonicParsing="false" onAction="#radioAAction" text="a)" visible="false" wrapText="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin></Separator>
+      <RadioButton fx:id="radioB" focusTraversable="false" mnemonicParsing="false" onAction="#radioBAction" text="b)" toggleGroup="$radioGroup" visible="false" wrapText="true" />
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin></Separator>
+      <RadioButton fx:id="radioC" focusTraversable="false" mnemonicParsing="false" onAction="#radioCAction" text="c)" toggleGroup="$radioGroup" visible="false" wrapText="true" />
+      <Separator prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="1.0" top="1.0" />
+         </VBox.margin></Separator>
+      <HBox>
+         <children>
+            <VBox prefHeight="39.0" prefWidth="204.0">
+               <children>
+                  <Button fx:id="startButton" focusTraversable="false" mnemonicParsing="false" onAction="#rozmowaAction" text="Start">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="220.0">
+               <children>
+                  <Button fx:id="cofnijButton" focusTraversable="false" mnemonicParsing="false" onAction="#cofnijAction" text="Cofnij" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>

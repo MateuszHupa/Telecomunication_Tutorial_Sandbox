@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplikacja_do_treningu_konsultantow.controllers.CenterUslugiTreeViewController">
+   <children>
+      <VBox prefHeight="94.0" prefWidth="1110.0">
+         <children>
+            <Label text="Wybierz filtr: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <HBox fx:id="topHBox" prefHeight="40.0" prefWidth="1110.0">
+               <children>
+                  <CheckBox fx:id="aktywneCheckbox" focusTraversable="false" mnemonicParsing="false" onAction="#aktywneUslugiFilter" text="Aktywne">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" right="10.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="nieaktywneCheckbox" focusTraversable="false" mnemonicParsing="false" onAction="#nieaktywneUslugiFilter" text="Nieaktywne">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="centerVBox" prefHeight="955.0" prefWidth="1110.0">
+         <children>
+            <TreeView fx:id="treeViewCenter" focusTraversable="false" prefHeight="973.0" prefWidth="1110.0" showRoot="false" />
+         </children></VBox>
+   </children>
+</VBox>

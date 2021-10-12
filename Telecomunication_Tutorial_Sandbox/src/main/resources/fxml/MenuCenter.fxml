@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplikacja_do_treningu_konsultantow.controllers.MenuCenterController">
+   <children>
+      <ToggleButton fx:id="buttonSamouczek" focusTraversable="false" mnemonicParsing="false" onAction="#OpenTutorial" onMouseEntered="#customSamouczekHoverOn" onMouseExited="#customSamouczekHoverOff" opacity="0.9" prefHeight="100.0" prefWidth="400.0" text="Samouczek" textFill="WHITE">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="MenuCenterToggleGroup" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="buttonInformator" focusTraversable="false" mnemonicParsing="false" onAction="#OpenInfo" onMouseEntered="#customInformatorHoverOn" onMouseExited="#customInformatorHoverOff" opacity="0.9" prefHeight="100.0" prefWidth="400.0" text="Informator" textFill="WHITE" toggleGroup="$MenuCenterToggleGroup">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="postepyButton" focusTraversable="false" mnemonicParsing="false" onAction="#showPostepy" prefHeight="100.0" prefWidth="400.0" text="Postępy" textFill="WHITE" toggleGroup="$MenuCenterToggleGroup">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </ToggleButton>
+      <ToggleButton fx:id="buttonWyjdz" focusTraversable="false" mnemonicParsing="false" onAction="#Exit" onMouseEntered="#customWyjdzHoverOn" onMouseExited="#customWyjdzHoverOff" opacity="0.9" prefHeight="100.0" prefWidth="400.0" text="Wyjdź" textFill="WHITE" toggleGroup="$MenuCenterToggleGroup">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </ToggleButton>
+   </children>
+</VBox>

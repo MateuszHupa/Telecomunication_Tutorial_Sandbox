@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplikacja_do_treningu_konsultantow.controllers.PostepyBorderPaneController">
+   <children>
+      <Label text="Wybierz filtr:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <HBox>
+         <children>
+            <HBox prefWidth="2065.0">
+               <children>
+                  <CheckBox fx:id="zaliczoneCheckBox" focusTraversable="false" mnemonicParsing="false" onAction="#zaliczoneAction" text="Zaliczone">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="nieZaliczoneCheckBox" focusTraversable="false" mnemonicParsing="false" onAction="#niezaliczoneAction" text="Nie zaliczone">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="1553.0">
+               <children>
+                  <Button fx:id="wyjdzButton" focusTraversable="false" mnemonicParsing="false" onAction="#wyjdzAction" text="Wyjdź">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <ComboBox fx:id="wybierzTypComboBox" focusTraversable="false" prefWidth="150.0" promptText="Wybierz typ">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Button fx:id="filtrujButton" focusTraversable="false" mnemonicParsing="false" onAction="#filtrujOnAction" text="Filtruj">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="resetButton" focusTraversable="false" mnemonicParsing="false" onAction="#resetOnAction" text="Reset">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="postepyTableView" focusTraversable="false" prefHeight="1001.0" prefWidth="1920.0">
+        <columns>
+            <TableColumn fx:id="opisColumn" prefWidth="75.0" text="Opis" />
+          <TableColumn fx:id="typColumn" prefWidth="75.0" text="Typ" />
+            <TableColumn fx:id="bledyColumn" prefWidth="75.0" text="Błędy" />
+          <TableColumn fx:id="zaliczenieColumn" prefWidth="75.0" text="Zaliczenie" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

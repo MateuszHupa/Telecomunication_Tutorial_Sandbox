@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="secondCenterBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1005.0" prefWidth="1295.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Aplikacja_do_treningu_konsultantow.controllers.SecondCenterBorderPaneController">
+   <padding>
+      <Insets bottom="5.0" left="10.0" right="10.0" />
+   </padding>
+   <left>
+      <VBox fx:id="leftSideVBox" prefWidth="160.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelUslugi" focusTraversable="false" onMouseClicked="#labelUslugiMouseClicked" onMouseEntered="#labelUslugiMouseEntered" onMouseExited="#labelUslugiMouseExited" prefHeight="50.0" prefWidth="160.0" text="Usługi">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Separator>
+            <Label fx:id="labelSalda" focusTraversable="false" onMouseClicked="#labelSaldaMouseClicked" onMouseEntered="#labelSaldaMouseEntered" onMouseExited="#labelSaldaMouseExited" prefHeight="50.0" prefWidth="160.0" text="Salda bieżące">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Separator>
+            <Label fx:id="labelHistoria" focusTraversable="false" onMouseClicked="#labelHistoriaMouseClicked" onMouseEntered="#labelHistoriaMouseEntered" onMouseExited="#labelHistoriaMouseExited" prefHeight="50.0" prefWidth="160.0" text="Historia połączeń">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Separator prefHeight="0.0" prefWidth="148.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Separator>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="VBoxCenter" prefHeight="1000.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets top="5.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="1.0" top="1.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="10.0" right="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
